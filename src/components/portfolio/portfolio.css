@@ -10,6 +10,8 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio__item:hover{
@@ -24,6 +26,7 @@
 
 .portfolio__item h3{
     margin: 1.2rem 0 2rem;
+    flex-grow: 1;
 }
 
 .portfolio__item-cta{
