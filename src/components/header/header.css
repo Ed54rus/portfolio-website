@@ -77,9 +77,10 @@ header {
 
 
 @media screen and (max-width: 600px) {
-    /* header {
-        height: 100vh;
-    } */
+    .btn {
+        font-size: 0.8rem;
+            
+    }
 
     .header__socials,
     .scroll__down {
