@@ -12,25 +12,25 @@ const Footer = () => {
 
       <ul className="permalinks">
         <li>
-          <a href="#home">Home</a>
+          <a href="#home">Домой</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about">Обо мне</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#experience">Опыт работы</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#services">Services</a>
+        </li> */}
+        <li>
+          <a href="#portfolio">Портфолио</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#testimonials">Отзывы</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Контакты</a>
         </li>
       </ul>
 

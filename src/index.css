@@ -131,6 +131,7 @@ img {
         margin-top: 6rem;
     }
 
+
 }
 
 
@@ -146,4 +147,8 @@ img {
         margin-bottom: 2rem;
     }
 
+    h1 {
+        font-size: 1.9rem;
+        line-height: 1.5;
+    }
 }

@@ -7,9 +7,15 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
+    setTimeout(() => {
+      form.current[3].innerText = "Сообщение Отправлено";
+
+      setTimeout(() => {
+        form.current[3].innerText = "Отправить Сообщение";
+      }, 2000);
+    }, 500);
 
     emailjs
       .sendForm(
@@ -32,8 +38,8 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Get in Touch</h5>
-      <h2>Contact Me</h2>
+      {/* <h5>Get in Touch</h5> */}
+      <h2>Мои контакты</h2>
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
@@ -94,7 +100,7 @@ const Contact = () => {
             placeholder="Ваше Сообщение"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button id="submit" type="submit" className="btn btn-primary">
             Отправить Сообщение
           </button>
         </form>

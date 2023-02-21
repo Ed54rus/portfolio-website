@@ -2,9 +2,9 @@ import React from "react";
 import "./nav.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
-import { BiBook } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
-import { BiMessageSquareDetail } from "react-icons/bi";
+import { BiBookOpen } from "react-icons/bi";
+import { MdWorkOutline } from "react-icons/md";
+import { MdOutlineContactPage } from "react-icons/md";
 import { useState } from "react";
 
 const Nav = () => {
@@ -30,21 +30,21 @@ const Nav = () => {
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >
-        <BiBook />
+        <BiBookOpen />
       </a>
       <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
       >
-        <RiServiceLine />
+        <MdWorkOutline />
       </a>
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
-        <BiMessageSquareDetail />
+        <MdOutlineContactPage />
       </a>
     </nav>
   );

@@ -44,8 +44,8 @@ const data = [
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      {/* <h5>Review from clients</h5> */}
+      <h2>Отзывы</h2>
 
       <Swiper
         modules={[Pagination, Autoplay]}
