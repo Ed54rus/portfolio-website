@@ -5,24 +5,30 @@ import Eduard from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
-  return (
-    <header id="home">
-      <div className="container header__container">
-        <h5>Привет, меня зовут</h5>
-        <h1>Эдуард Малышенко</h1>
-        <h5 className="text-light">Frontend Developer</h5>
-        <CTA />
-        <HeaderSocials />
+	return (
+		<header className="header" id="home">
+			<div className="header__container container ">
+				<h1 className="header__title">
+					<span className="header__text">Привет, меня зовут</span>
+					Эдуард Малышенко
+					<span className="header__text header__text--light">
+						Frontend Developer
+					</span>
+				</h1>
+				<CTA />
 
-        <div className="me">
-          <img src={Eduard} alt="Eduard" />
-        </div>
-        <a href="#contact" className="scroll__down">
-          Прокрутить вниз
-        </a>
-      </div>
-    </header>
-  );
+				<div className="header__profile-wrapper">
+					<HeaderSocials />
+					<div className="header__profile">
+						<img src={Eduard} alt="Eduard" />
+					</div>
+					<a className="header__link link scroll-down" href="#contact">
+						Прокрутить вниз
+					</a>
+				</div>
+			</div>
+		</header>
+	);
 };
 
 export default Header;

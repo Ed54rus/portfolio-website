@@ -1,13 +1,18 @@
-import React from 'react'
-import CV from '../../assets/cv.pdf'
+import React from "react";
+import CV from "../../assets/cv.pdf";
 
 const CTA = () => {
-  return (
-    <div className='cta'>
-        <a href={CV} download className='btn btn-header' >Скачать резюме</a>
-        <a href="#contact" className='btn btn-primary btn-header'>Связаться со мной</a>
-    </div>
-  )
-}
+	return (
+		<div className="header__buttons">
+			<a className="header__button button" href={CV} download>
+				Скачать резюме
+			</a>
 
-export default CTA
+			<a className="header__button button button--primary" href="#contact">
+				Связаться со мной
+			</a>
+		</div>
+	);
+};
+
+export default CTA;
