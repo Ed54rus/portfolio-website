@@ -36,7 +36,8 @@
 .about__person-image {
 	border-radius: 32px;
 	overflow: hidden;
-	transform: rotate(10deg);
+  aspect-ratio: 1/1;
+	transform: rotate(5deg);
 	transition: transform 0.4s;
 }
 
