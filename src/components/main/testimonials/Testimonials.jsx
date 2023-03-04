@@ -43,7 +43,7 @@ const data = [
 
 const Testimonials = () => {
 	return (
-		<section className="testimonials" id="testimonials">
+		<section className="testimonials section" id="testimonials">
 			<h2 className="testimonials__title">Отзывы</h2>
 
 			<Swiper

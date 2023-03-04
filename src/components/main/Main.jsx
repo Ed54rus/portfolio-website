@@ -11,12 +11,12 @@ import Contact from "./contact/Contact";
 const Main = () => {
 	return (
 		<div className="main">
-			{/* <Nav /> */}
-			{/* <About /> */}
-			{/* <Experience /> */}
+			<Nav />
+			<About />
+			<Experience />
 			{/* <Services /> */}
-			{/* <Portfolio /> */}
-			{/* <Testimonials /> */}
+			<Portfolio />
+			<Testimonials />
 			<Contact />
 		</div>
 	);

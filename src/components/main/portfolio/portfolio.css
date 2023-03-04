@@ -10,6 +10,12 @@
 	font-size: 24px;
 	font-weight: 500;
 }
+
+.portfolio__item-list{
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .portfolio__item {
 	display: flex;
 	flex-direction: column;
