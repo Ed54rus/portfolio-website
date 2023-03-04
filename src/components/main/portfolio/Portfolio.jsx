@@ -5,8 +5,7 @@ import Projects from "./Projects";
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      {/* <h5>Мои Проекты</h5> */}
-      <h2>Портфолио</h2>
+      <h2 className="portfolio__title">Портфолио</h2>
       <Projects />
     </section>
   );

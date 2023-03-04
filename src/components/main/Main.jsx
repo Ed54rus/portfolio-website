@@ -13,9 +13,9 @@ const Main = () => {
 		<div className="main">
 			{/* <Nav /> */}
 			{/* <About /> */}
-			<Experience />
+			{/* <Experience /> */}
 			{/* <Services /> */}
-			{/* <Portfolio /> */}
+			<Portfolio />
 			{/* <Testimonials /> */}
 			{/* <Contact /> */}
 		</div>

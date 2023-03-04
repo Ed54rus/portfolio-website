@@ -1,53 +1,63 @@
-.portfolio__container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+.portfolio__container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+	gap: 40px;
+}
+.portfolio__title {
+	margin-bottom: 48px;
+	text-align: center;
+	color: var(--color-primary);
+	font-size: 24px;
+	font-weight: 500;
+}
+.portfolio__item {
+	display: flex;
+	flex-direction: column;
+  height: 100%;
+	padding: 20px;
+	background-color: var(--color-bg-variant);
+	border-radius: 32px;
+	border: 1px solid transparent;
+	transition: border-color 0.4s, background-color 0.4s;
 }
 
-.portfolio__item{
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
+.portfolio__item:hover {
+	border-color: var(--color-primary-variant);
+	background-color: transparent;
 }
 
-.portfolio__item:hover{
-    border-color: var(--color-primary-variant);
-    background: transparent;
+.portfolio__item-image {
+	border-radius: 24px;
+	overflow: hidden;
+	aspect-ratio: 1/1;
+	object-fit: cover;
 }
 
-.portfolio__item-image{
-    border-radius: 1.5rem;
-    overflow: hidden;
+.portfolio__item-title {
+	margin: 20px 0 32px;
+	flex-grow: 1;
 }
 
-.portfolio__item h3{
-    margin: 1.2rem 0 2rem;
-    flex-grow: 1;
+.portfolio__item-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
 }
 
-.portfolio__item-cta{
-    display: flex;
-    gap: 1rem;
-}
-
-/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
-
-@media screen and (max-width: 1024px) {
-
-    .portfolio__container{
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
-}
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
-@media screen and (max-width: 600px) {
-    .portfolio__container{
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+@media screen and (max-width: 400px) {
+	.portfolio__container {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 20px;
+	}
+
+	.portfolio__item-title {
+		text-align: center;
+	}
+
+	.portfolio__item-buttons {
+		justify-content: center;
+		margin-bottom: 10px;
+	}
 
 }
