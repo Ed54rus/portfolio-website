@@ -1,62 +1,68 @@
-.container.testimonials__container {
-    width: 40%;
-    padding-bottom: 4rem;
+.testimonials {
+  margin: 0 auto;
+	max-width: 632px;
+  width: 100%;
+  padding: 0 16px;
 }
 
-.client__avatar {
-    width: 4rem;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
-    border: 0.4rem solid var(--color-primary-variant);
-}
-
-.client__name{
-    display: flex;
-    justify-content: center;
+.container.testimonials__container{
+	padding-bottom: 64px;
+  margin-right: 40px;
 }
 
 .testimonial {
-    background: var(--color-bg-variant);
-    text-align: center;
-    padding: 2rem;
-    border-radius: 2rem;
-    user-select: none;
+  box-sizing: border-box;
+  background: var(--color-bg-variant);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
 }
 
-.client__review {
-    color: var(--color-light);
-    font-weight: 300;
-    display: block;
-    text-align: center;
-    width: 80%;
-    margin: 0.8rem auto 0;
+.testimonials__title {
+	margin-bottom: 48px;
+	text-align: center;
+	color: var(--color-primary);
+	font-size: 24px;
+	font-weight: 500;
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet{
-background: var(--color-primary) ;
+.testimonial__avatar {
+	width: 64px;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 0 auto 16px;
+	border: 5px solid var(--color-primary-variant);
 }
 
+.testimonial__name {
+	display: flex;
+	justify-content: center;
+}
+
+
+.testimonial__review {
+	color: var(--color-light);
+	font-weight: 300;
+  font-size: 13px;
+	display: block;
+	text-align: center;
+	width: 80%;
+	margin: 0.8rem auto 0;
+}
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .container.testimonials__container {
         width: 60%;
     }
 
-}
+} */
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 
-
-@media screen and (max-width: 600px) {
-    .container.testimonials__container {
-        width: var(--container-width-sm);
-    }
-
-    .client__review {
-        width: var(--container-width-sm);
-    }
-}
+/* @media screen and (max-width: 600px) {
+  
+  } */

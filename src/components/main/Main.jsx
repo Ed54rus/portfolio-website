@@ -15,9 +15,9 @@ const Main = () => {
 			{/* <About /> */}
 			{/* <Experience /> */}
 			{/* <Services /> */}
-			<Portfolio />
+			{/* <Portfolio /> */}
 			{/* <Testimonials /> */}
-			{/* <Contact /> */}
+			<Contact />
 		</div>
 	);
 };
