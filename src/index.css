@@ -27,6 +27,8 @@ body {
 	color: var(--color-white);
 	line-height: 1.7;
 	background-image: url("../src/assets/bg-texture.png");
+  border: none;
+	/* outline-offset: 6px; */
 }
 
 /* ================ GENERAL STYLES ================ */
@@ -38,14 +40,14 @@ body {
 }
 
 .container {
-  max-width: 1366px;
+	max-width: 1366px;
 	width: 100%;
-  padding: 0 15px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
-.section{
-  margin-bottom: 128px;
+.section {
+	margin-bottom: 128px;
 }
 
 .button {
@@ -81,6 +83,7 @@ body {
 	color: var(--color-primary);
 	transition: color 0.4s;
 }
+
 .link:hover {
 	color: var(--color-white);
 }

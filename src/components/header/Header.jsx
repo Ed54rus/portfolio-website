@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import CTA from "./CTA";
-import Eduard from "../../assets/portrait.jpg";
+import Eduard from "../../assets/ed.png";
 import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
@@ -16,7 +16,6 @@ const Header = () => {
 					</span>
 				</h1>
 				<CTA />
-
 				<div className="header__profile-wrapper">
 					<HeaderSocials />
 					<div className="header__profile">

@@ -20,12 +20,13 @@
 .header__text {
 	font-size: 14px;
 }
+
 .header__text--light {
 	color: var(--color-light);
 }
 
 .header__buttons {
-	margin-bottom: 64px;
+	margin-bottom: 192px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
@@ -36,7 +37,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 0.8rem;
+	gap: 12px;
 }
 
 .header__socials::after {
@@ -54,14 +55,14 @@
 }
 
 .header__profile {
-	/* background: linear-gradient(var(--color-primary), transparent); */
+	background: linear-gradient(var(--color-primary), transparent);
 	min-width: 288px;
-	max-width: 352px;
+	max-width: 450px;
 	width: 100%;
-	/* height: 520px; */
-	border-radius: 40px;
+	height: 530px;
+	border-radius: 220px 220px 0 0;
 	overflow: hidden;
-	/* padding: 80px 24px 24px 24px; */
+	padding: 48px 24px 24px 24px;
 }
 
 .scroll-down {
@@ -69,14 +70,6 @@
 	writing-mode: vertical-lr;
 	font-weight: 400;
 	font-size: 15px;
-}
-
-/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
-
-@media screen and (max-width: 1024px) {
-	/* header {
-        min-height: 68vh;
-    } */
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
@@ -91,6 +84,9 @@
 
 	.header__title {
 		font-size: 32px;
+	}
+	.header__buttons {
+		margin-bottom: 128px;
 	}
 
 	.header__button {
@@ -110,7 +106,7 @@
 
 /* ================ MEDIA QUERIES (ULTRA SMALL DEVICES) ================ */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 374px) {
 	.header__title {
 		font-size: 26px;
 	}
@@ -121,12 +117,14 @@
 
 	.header__buttons {
 		gap: 12px;
+		margin-bottom: 96px;
 	}
+
 	.header__button {
 		font-size: 13px;
 	}
 
 	.header__profile {
-		height: 380px;
+		height: 360px;
 	}
 }
