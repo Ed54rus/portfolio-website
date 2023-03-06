@@ -54,6 +54,7 @@ const Testimonials = () => {
 				speed={700}
 				autoplay={{ delay: 3000 }}
 				loop={true}
+        autoHeight={true}
 			>
 				{data.map(({ avatar, name, review }, id) => (
 					<SwiperSlide className="testimonial" key={id}>

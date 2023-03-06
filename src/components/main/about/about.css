@@ -123,3 +123,9 @@
 		margin: 24px 0;
 	}
 }
+
+@media screen and (max-width: 400px) {
+	.about__person {
+		width: 75%;
+	}
+}
