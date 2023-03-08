@@ -1,5 +1,5 @@
 .header {
-	padding-top: 80px;
+	padding-top: 5vh;
 }
 
 .header__container {
@@ -26,7 +26,7 @@
 }
 
 .header__buttons {
-	margin-bottom: 192px;
+	margin-bottom: 5vh;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
@@ -92,7 +92,6 @@
 	height: 530px;
 	border-radius: 220px 220px 0 0;
 	overflow: hidden;
-  margin-bottom: 48px;
 	padding: 48px 24px 24px 24px;
 }
 
@@ -101,6 +100,7 @@
 	writing-mode: vertical-lr;
 	font-weight: 400;
 	font-size: 15px;
+  cursor: pointer;
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
@@ -110,17 +110,17 @@
 		justify-content: center;
 	}
 
-	.header {
+	/* .header {
 		padding-top: 24px;
-	}
+	} */
 
 	.header__title {
 		font-size: 32px;
 	}
 
-	.header__buttons {
+	/* .header__buttons {
 		margin-bottom: 128px;
-	}
+	} */
 
 	.header__button {
 		font-size: 13px;
@@ -150,7 +150,7 @@
 
 	.header__buttons {
 		gap: 12px;
-		margin-bottom: 48px;
+		/* margin-bottom: 48px; */
 	}
 
 	.header__button {

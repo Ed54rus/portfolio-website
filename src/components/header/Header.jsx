@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./header.css";
 import CTA from "./CTA";
 import Eduard from "../../assets/ed.png";
@@ -21,9 +22,18 @@ const Header = () => {
 					<div className="header__profile">
 						<img src={Eduard} alt="Eduard" />
 					</div>
-					<a className="header__link link scroll-down" href="#contact">
-						Прокрутить вниз
-					</a>
+					<Link
+          className="header__link link scroll-down"
+						to="contact"
+						// spy={true}
+						smooth={true}
+						// offset={-70}
+						duration={500}
+					>Прокрутить вниз
+						{/* <a className="header__link link scroll-down" href="#contact">
+							
+						</a> */}
+					</Link>
 				</div>
 			</div>
 		</header>

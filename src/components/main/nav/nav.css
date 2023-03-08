@@ -21,18 +21,19 @@
 	display: flex;
 	color: var(--color-light);
 	font-size: 1.1rem;
+	transition: background-color 0.5s;
 }
 
 .nav__link:hover {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav__link--active {
+.active {
 	background-color: var(--color-primary);
 	color: var(--color-bg);
 }
 
-.nav__link--active:hover {
+.active:hover {
 	background-color: var(--color-primary);
 }
 

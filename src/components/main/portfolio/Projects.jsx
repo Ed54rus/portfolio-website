@@ -55,8 +55,8 @@ const Projects = () => {
 	return (
 		<ul className="portfolio__container container">
 			{data.map(({ id, img, title, github, demo }) => (
-				<li className="portfolio__item-list">
-        <article className="portfolio__item" key={id}>
+				<li className="portfolio__item-list" key={id}>
+        <article className="portfolio__item" >
 					<img className="portfolio__item-image" src={img} alt={title} />
 					<h3 className="portfolio__item-title">{title}</h3>
 					<div className="portfolio__item-buttons">
