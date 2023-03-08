@@ -21,7 +21,8 @@
 	display: flex;
 	color: var(--color-light);
 	font-size: 1.1rem;
-	transition: background-color 0.5s;
+	transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .nav__link:hover {

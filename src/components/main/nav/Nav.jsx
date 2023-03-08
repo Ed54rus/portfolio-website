@@ -1,5 +1,5 @@
 import React from "react";
-import ScrollSpy from "react-scrollspy-navigation";
+import { Link } from "react-scroll";
 import "./nav.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
@@ -9,23 +9,61 @@ import { MdOutlineContactPage } from "react-icons/md";
 const Nav = () => {
 	return (
 		<nav className="nav">
-			<ScrollSpy duration="1000">
-				<a className="nav__link active" href="#home" ref={React.createRef()}>
-					<AiOutlineHome />
-				</a>
-				<a className="nav__link" href="#about" ref={React.createRef()}>
-					<AiOutlineUser />
-				</a>
-				<a className="nav__link" href="#experience" ref={React.createRef()}>
-					<BiBookOpen />
-				</a>
-				<a className="nav__link" href="#portfolio" ref={React.createRef()}>
-					<MdWorkOutline />
-				</a>
-				<a className="nav__link" href="#contact" ref={React.createRef()}>
-					<MdOutlineContactPage />
-				</a>
-			</ScrollSpy>
+			<Link
+				className="nav__link"
+				activeClass="active"
+				to="home"
+				smooth={true}
+				spy={true}
+				offset={0}
+				duration={1000}
+			>
+				<AiOutlineHome />
+			</Link>
+			<Link
+				className="nav__link"
+				activeClass="active"
+				to="about"
+				smooth={true}
+				spy={true}
+				offset={-50}
+				duration={1000}
+			>
+				<AiOutlineUser />
+			</Link>
+			<Link
+				className="nav__link"
+				activeClass="active"
+				to="experience"
+				smooth={true}
+				spy={true}
+				offset={-50}
+				duration={1000}
+			>
+				<BiBookOpen />
+			</Link>
+			<Link
+				className="nav__link"
+				activeClass="active"
+				to="portfolio"
+				smooth={true}
+				spy={true}
+				offset={-50}
+				duration={1000}
+			>
+				<MdWorkOutline />
+			</Link>
+			<Link
+				className="nav__link"
+				activeClass="active"
+				to="contact"
+				smooth={true}
+				spy={true}
+				offset={-50}
+				duration={1000}
+			>
+				<MdOutlineContactPage />
+			</Link>
 		</nav>
 	);
 };

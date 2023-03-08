@@ -7,7 +7,7 @@ import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
 	return (
-		<header className="header section" id="home">
+		<header className="header section" name="home" id="home">
 			<div className="header__container container ">
 				<h1 className="header__title">
 					<span className="header__text">Привет, меня зовут</span>
@@ -23,16 +23,15 @@ const Header = () => {
 						<img src={Eduard} alt="Eduard" />
 					</div>
 					<Link
-          className="header__link link scroll-down"
+						className="header__link link scroll-down"
+						activeClass="active"
 						to="contact"
-						// spy={true}
 						smooth={true}
-						// offset={-70}
-						duration={500}
-					>Прокрутить вниз
-						{/* <a className="header__link link scroll-down" href="#contact">
-							
-						</a> */}
+						spy={true}
+						offset={-50}
+						duration={1000}
+					>
+						Прокрутить вниз
 					</Link>
 				</div>
 			</div>
