@@ -36,7 +36,7 @@ const Footer = () => {
 						to="about"
 						smooth={true}
 						spy={true}
-						offset={-50}
+						offset={-30}
 						duration={1000}
 					>
 						Обо мне
@@ -49,7 +49,7 @@ const Footer = () => {
 						to="experience"
 						smooth={true}
 						spy={true}
-						offset={-50}
+						offset={-30}
 						duration={1000}
 					>
 						Опыт работы
@@ -61,7 +61,7 @@ const Footer = () => {
             to="contact"
 						smooth={true}
 						spy={true}
-						offset={-50}
+						offset={-30}
 						duration={1000}>
 						Services
 					</a>
@@ -72,7 +72,7 @@ const Footer = () => {
 						to="portfolio"
 						smooth={true}
 						spy={true}
-						offset={-50}
+						offset={-30}
 						duration={1000}
 					>
 						Портфолио
@@ -84,7 +84,7 @@ const Footer = () => {
 						to="testimonials"
 						smooth={true}
 						spy={true}
-						offset={-50}
+						offset={-30}
 						duration={1000}
 					>
 						Отзывы
@@ -96,7 +96,7 @@ const Footer = () => {
 						to="contact"
 						smooth={true}
 						spy={true}
-						offset={-50}
+						offset={-30}
 						duration={1000}
 					>
 						Контакты

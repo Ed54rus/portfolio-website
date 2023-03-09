@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import CV from "../../assets/cv.pdf";
 
 const CTA = () => {

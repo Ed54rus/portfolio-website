@@ -26,7 +26,7 @@ const Nav = () => {
 				to="about"
 				smooth={true}
 				spy={true}
-				offset={-50}
+				offset={-30}
 				duration={1000}
 			>
 				<AiOutlineUser />
@@ -37,7 +37,7 @@ const Nav = () => {
 				to="experience"
 				smooth={true}
 				spy={true}
-				offset={-50}
+				offset={-30}
 				duration={1000}
 			>
 				<BiBookOpen />
@@ -48,7 +48,7 @@ const Nav = () => {
 				to="portfolio"
 				smooth={true}
 				spy={true}
-				offset={-50}
+				offset={-30}
 				duration={1000}
 			>
 				<MdWorkOutline />
@@ -59,7 +59,7 @@ const Nav = () => {
 				to="contact"
 				smooth={true}
 				spy={true}
-				offset={-50}
+				offset={-30}
 				duration={1000}
 			>
 				<MdOutlineContactPage />

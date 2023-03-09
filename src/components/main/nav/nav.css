@@ -21,12 +21,16 @@
 	display: flex;
 	color: var(--color-light);
 	font-size: 1.1rem;
-	transition: background-color 0.3s;
-  cursor: pointer;
+	transition: background-color 0.3s, transform 0.1s;
+	cursor: pointer;
 }
 
 .nav__link:hover {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav__link:active {
+	transform: scale(1.2);
 }
 
 .active {
