@@ -43,7 +43,11 @@ const data = [
 
 const Testimonials = () => {
 	return (
-		<section className="testimonials section" id="testimonials">
+		<section
+			className="testimonials section"
+			name="testimonials"
+			id="testimonials"
+		>
 			<h2 className="testimonials__title">Отзывы</h2>
 
 			<Swiper
@@ -54,7 +58,7 @@ const Testimonials = () => {
 				speed={700}
 				autoplay={{ delay: 3000 }}
 				loop={true}
-        // autoHeight={true}
+				// autoHeight={true}
 			>
 				{data.map(({ avatar, name, review }, id) => (
 					<SwiperSlide className="testimonial" key={id}>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./footer.css";
 import { SlSocialVkontakte } from "react-icons/sl";
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -6,45 +7,100 @@ import { AiOutlineInstagram } from "react-icons/ai";
 const Footer = () => {
 	return (
 		<footer className="footer">
-			<a className="footer__logo footer__link" href="#home">
+			<Link
+				className="footer__logo footer__link"
+				to="home"
+				smooth={true}
+				spy={true}
+				duration={1000}
+			>
 				ED
-			</a>
+			</Link>
 
 			<ul className="footer__items">
 				<li className="footer__item">
-					<a className="footer__link" href="#home">
+					<Link
+						className="footer__link"
+						to="home"
+						smooth={true}
+						spy={true}
+						duration={1000}
+					>
 						Домой
-					</a>
+					</Link>
 				</li>
+
 				<li className="footer__item">
-					<a className="footer__link" href="#about">
+					<Link
+						className="footer__link"
+						to="about"
+						smooth={true}
+						spy={true}
+						offset={-50}
+						duration={1000}
+					>
 						Обо мне
-					</a>
+					</Link>
 				</li>
+
 				<li className="footer__item">
-					<a className="footer__link" href="#experience">
+					<Link
+						className="footer__link"
+						to="experience"
+						smooth={true}
+						spy={true}
+						offset={-50}
+						duration={1000}
+					>
 						Опыт работы
-					</a>
+					</Link>
 				</li>
+
 				{/* <li className="footer__item">
-					<a className="footer__link" href="#services">
+					<a className="footer__link"
+            to="contact"
+						smooth={true}
+						spy={true}
+						offset={-50}
+						duration={1000}>
 						Services
 					</a>
 				</li> */}
 				<li className="footer__item">
-					<a className="footer__link" href="#portfolio">
+					<Link
+						className="footer__link"
+						to="portfolio"
+						smooth={true}
+						spy={true}
+						offset={-50}
+						duration={1000}
+					>
 						Портфолио
-					</a>
+					</Link>
 				</li>
 				<li className="footer__item">
-					<a className="footer__link" href="#testimonials">
+					<Link
+						className="footer__link"
+						to="testimonials"
+						smooth={true}
+						spy={true}
+						offset={-50}
+						duration={1000}
+					>
 						Отзывы
-					</a>
+					</Link>
 				</li>
 				<li className="footer__item">
-					<a className="footer__link" href="#contact">
+					<Link
+						className="footer__link"
+						to="contact"
+						smooth={true}
+						spy={true}
+						offset={-50}
+						duration={1000}
+					>
 						Контакты
-					</a>
+					</Link>
 				</li>
 			</ul>
 
